@@ -1,8 +1,9 @@
 
 function App() {
   return (
-    <div className="App">
-     <h1>Expensa App</h1>
+    <div>
+     <h2>Expensa App</h2>
+     <p>This is also Visible!</p>
     </div>
   );
 }

@@ -1,8 +1,11 @@
+
+import ExpenseItem from "./components/ExpenseItem/ExpenseItem";
+
 function App() {
   return (
     <div>
       <h2>Expensa App</h2>
-      <p>This is also Visible!</p>
+      <ExpenseItem />
     </div>
   );
 }

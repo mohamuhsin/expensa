@@ -2,10 +2,10 @@ import ExpenseItem from "./components/ExpenseItem/ExpenseItem";
 
 function App() {
   const expense = [
-    { title: "Car Insurance", amount: 294.76, date: new Date(2021, 8, 28) },
-    { title: "Car Insurance", amount: 294.76, date: new Date(2021, 8, 28) },
-    { title: "Car Insurance", amount: 294.76, date: new Date(2021, 8, 28) },
-    { title: "Car Insurance", amount: 294.76, date: new Date(2021, 8, 28) },
+    { title: "Car Insurance", amount: 294.00, date: new Date(2022, 9, 28) },
+    { title: "Toilet Paper", amount: 24.16, date: new Date(2021, 4, 28) },
+    { title: "New Tv", amount: 94.70, date: new Date(2022, 10, 28) },
+    { title: "New Desk", amount: 29.12, date: new Date(2021, 5, 28) },
   ];
 
   return (

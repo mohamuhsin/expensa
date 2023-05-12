@@ -7,6 +7,11 @@ const ExpenseForm = () => {
     setEnteredTitle(event.target.value);
   };
 
+  const [enteredAmount, setEneteredAmount] = useState("");
+  const amountChangeHandler = (event) => {
+    setEneteredAmount(event.target.value);
+  };
+
   return (
     <form>
       <div className="new-expense__controls">
@@ -17,7 +22,7 @@ const ExpenseForm = () => {
 
         <div className="new-expense__control">
           <label>Amount</label>
-          <input type="number" min="0.01" step="0.01" />
+          <input type="number" min="0.01" step="0.01" onChange={amountChangeHandler} />
         </div>
 
         <div className="new-expense__control">

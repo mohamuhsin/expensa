@@ -12,6 +12,11 @@ const ExpenseForm = () => {
     setEneteredAmount(event.target.value);
   };
 
+  const [enteredDate, setEneteredDate] = useState("");
+  const dateChangeHandler = (event) => {
+    setEneteredDate(event.target.value);
+  };
+
   return (
     <form>
       <div className="new-expense__controls">
@@ -22,12 +27,17 @@ const ExpenseForm = () => {
 
         <div className="new-expense__control">
           <label>Amount</label>
-          <input type="number" min="0.01" step="0.01" onChange={amountChangeHandler} />
+          <input
+            type="number"
+            min="0.01"
+            step="0.01"
+            onChange={amountChangeHandler}
+          />
         </div>
 
         <div className="new-expense__control">
           <label>Date</label>
-          <input type="date" min="2019-01-01" max="2023-12-31" />
+          <input type="date" min="2019-01-01" max="2023-12-31" onChange={dateChangeHandler} />
         </div>
       </div>
       <div className="new-expense__action">

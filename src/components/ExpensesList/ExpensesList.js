@@ -1,5 +1,6 @@
 import React from "react";
 import ExpenseItem from "../ExpenseItem/ExpenseItem";
+import './ExpensesList.css';
 
 const ExpensesList = (props) => {
   let expensesContent = <p>No expenses found.</p>;
@@ -14,6 +15,7 @@ const ExpensesList = (props) => {
       />
     ));
   }
+  return <ul className="expenses-list"></ul>
 };
 
 export default ExpensesList;

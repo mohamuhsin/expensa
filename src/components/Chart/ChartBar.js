@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
 const ChartBar = () => {
-    return(<div></div>)
-}
-export default ChartBar
+  return <div></div>;
+};
+export default ChartBar;
